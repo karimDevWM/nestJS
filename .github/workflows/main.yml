@@ -23,8 +23,8 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build --no-cache . --tag ghcr.io/karimdevwm/le_roi_shawarma:latest
-              docker push ghcr.io/karimdevwm/le_roi_shawarma:latest
+              docker build --no-cache . --tag ghcr.io/karimdevwm/nestJS:latest
+              docker push ghcr.io/karimdevwm/nestJS:latest
           
       deploy:
         needs: push-store-image
