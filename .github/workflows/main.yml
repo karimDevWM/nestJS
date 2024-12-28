@@ -23,7 +23,7 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build --no-cache . --tag ghcr.io/karimdevwm/nestJS:latest
+              docker build --no-cache . --tag ghcr.io/karimdevwm/nestjs:latest
               docker push ghcr.io/karimdevwm/nestjs:latest
           
       deploy:
